@@ -6,6 +6,10 @@
 * https://dribbble.com/shots/10864576--Neumorphic-Music-Player
 * https://dribbble.com/shots/9338617-Simple-Music-Player/attachments/1373153?mode=media
 
+## Support:
+* iOS 14+
+* macOS11+
+
 ## Installtion:
 * Swift Package Manager
 
