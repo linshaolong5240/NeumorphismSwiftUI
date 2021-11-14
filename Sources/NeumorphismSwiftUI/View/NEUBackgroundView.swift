@@ -12,7 +12,9 @@ public struct NEUBackgroundView: View {
     
     @Environment(\.colorScheme) private var colorScheme
     
-    public init() { }
+    public init() {
+        
+    }
     
     public var body: some View {
         let colors = colorScheme == .light ? Color.lightBackgroundColors : Color.darkBackgroundColors

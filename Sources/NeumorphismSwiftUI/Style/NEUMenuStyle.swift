@@ -13,6 +13,10 @@ public struct NEUMenuStyle<S>: MenuStyle, NEUStyle where S: Shape {
 
     let shape: S
     
+    public init(shape: S) {
+        self.shape = shape
+    }
+    
     public func makeBody(configuration: Configuration) -> some View {
         let backgroundColors: [Color] = neuBacgroundColors(colorScheme)
 

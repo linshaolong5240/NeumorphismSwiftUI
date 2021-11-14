@@ -17,7 +17,7 @@ public struct NEUDefaultTextFieldStyle<Label>: NEUTextFieldStyle where Label: Vi
     
     let label: Label
     
-    init(label: Label) {
+    public init(label: Label) {
         self.label = label
     }
     

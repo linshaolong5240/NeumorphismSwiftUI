@@ -9,7 +9,7 @@ import SwiftUI
 
 public struct NEUShadowModifier: ViewModifier, NEUStyle {
     
-    enum Position {
+    public enum Position {
         case topLeading
         case bottomTrailing
         case all
@@ -24,7 +24,7 @@ public struct NEUShadowModifier: ViewModifier, NEUStyle {
     
     let position: Position
     
-    init(_ position: Position = .all) {
+    public init(_ position: Position = .all) {
         self.position = position
     }
     

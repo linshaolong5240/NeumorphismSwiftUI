@@ -22,7 +22,7 @@ public struct NEUBorderModifier<S>: ViewModifier, NEUStyle where S: Shape {
     var borderWidth: CGFloat?
     let style: NEUBorderStyle
     
-    init(shape: S, borderWidth: CGFloat? = nil, style: NEUBorderStyle = .unevenness) {
+    public init(shape: S, borderWidth: CGFloat? = nil, style: NEUBorderStyle = .unevenness) {
         self.shape = shape
         self.borderWidth = borderWidth
         self.style = style

@@ -18,7 +18,7 @@ public struct NEUDefaultButtonStyle<S: Shape>: NEUButtonStyle {
     let shape: S
     let toggle: Bool
     
-    init (shape: S, toggle: Bool = false) {
+    public init (shape: S, toggle: Bool = false) {
         self.shape = shape
         self.toggle = toggle
     }
@@ -50,7 +50,7 @@ public struct NEUBorderButtonStyle<S: Shape>: NEUButtonStyle {
     let shape: S
     let toggle: Bool
     
-    init (shape: S, toggle: Bool = false) {
+    public init (shape: S, toggle: Bool = false) {
         self.shape = shape
         self.toggle = toggle
     }
@@ -84,7 +84,7 @@ public struct NEUConvexBorderButtonStyle<S: Shape>: NEUButtonStyle {
     let shape: S
     let toggle: Bool
     
-    init (shape: S, toggle: Bool = false) {
+    public init (shape: S, toggle: Bool = false) {
         self.shape = shape
         self.toggle = toggle
     }

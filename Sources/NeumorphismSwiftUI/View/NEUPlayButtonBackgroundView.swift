@@ -14,7 +14,7 @@ public struct NEUPlayButtonBackgroundView<S: Shape>: View {
     let shape: S
     let shadow: Bool
 
-    init(shape: S, shadow: Bool = true) {
+    public init(shape: S, shadow: Bool = true) {
         self.shadow = shadow
         self.shape = shape
     }
@@ -33,7 +33,7 @@ struct NEULightToggleBackground<S: Shape>: View {
     let shadow: Bool
     let shape: S
     
-    init(shadow: Bool = true, shape: S) {
+    public init(shadow: Bool = true, shape: S) {
         self.shadow = shadow
         self.shape = shape
     }
@@ -64,10 +64,11 @@ struct NEUDarkToggleBackground<S: Shape>: View, NEUStyle {
     let shadow: Bool
     let shape: S
     
-    init(shadow: Bool = true, shape: S) {
+    public init(shadow: Bool = true, shape: S) {
         self.shadow = shadow
         self.shape = shape
     }
+    
     var body: some View {
         let orangeColors: [Color] = .darkOrangeColors
         

@@ -12,6 +12,10 @@ public protocol NEUToggleStyle: ToggleStyle, NEUStyle { }
 public struct NEUDefaultToggleStyle: NEUToggleStyle {
     
     @Environment(\.colorScheme) private var colorScheme
+    
+    public init() {
+        
+    }
 
     public func makeBody(configuration: Self.Configuration) -> some View {
         

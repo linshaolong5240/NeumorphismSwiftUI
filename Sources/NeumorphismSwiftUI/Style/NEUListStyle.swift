@@ -21,11 +21,17 @@ struct NEUListStyle_Previews: PreviewProvider {
 }
 #endif
 
-struct NEUListRowBackgroundView: View {
-    @Environment(\.colorScheme) var colorScheme
+public struct NEUListRowBackgroundView: View {
+    
+    @Environment(\.colorScheme) private var colorScheme
+    
     let isHighlighted: Bool
+    
+    public init(isHighlighted: Bool) {
+        self.isHighlighted = isHighlighted
+    }
 
-    var body: some View {
+    public var body: some View {
         if colorScheme == .light {
             NEULightListRowBackgroundView(isHighlighted: isHighlighted)
         }else {
@@ -34,10 +40,15 @@ struct NEUListRowBackgroundView: View {
     }
 }
 
-struct NEULightListRowBackgroundView: View {
+public struct NEULightListRowBackgroundView: View {
+    
     let isHighlighted: Bool
     
-    var body: some View {
+    public init(isHighlighted: Bool) {
+        self.isHighlighted = isHighlighted
+    }
+    
+    public var body: some View {
         if isHighlighted {
 //            ZStack {
 //                Color.lightBackgourdStart
@@ -60,13 +71,18 @@ struct NEULightListRowBackgroundView: View {
     }
 }
 
-struct NEUDarkListRowBackgroundView: View {
+public struct NEUDarkListRowBackgroundView: View {
+    
     let darkStart = Color(red: 26 / 255, green: 28 / 255, blue: 31 / 255)
     let darkEnd = Color(red: 18 / 255, green: 19 / 255, blue: 21 / 255)
 
     let isHighlighted: Bool
+    
+    public init(isHighlighted: Bool) {
+        self.isHighlighted = isHighlighted
+    }
 
-    var body: some View {
+    public var body: some View {
         if isHighlighted {
 //            ZStack {
 //                Color.darkBackgourdStart

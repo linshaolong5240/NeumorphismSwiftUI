@@ -10,6 +10,10 @@ import SwiftUI
 public struct NEURingProgressViewStyle: ProgressViewStyle, NEUStyle {
     
     @Environment(\.colorScheme) private var colorScheme
+    
+    public init() {
+        
+    }
 
     public func makeBody(configuration: Configuration) -> some View {
         
