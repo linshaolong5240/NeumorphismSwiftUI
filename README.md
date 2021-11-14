@@ -10,7 +10,7 @@
 * iOS 14+
 * macOS11+
 
-## Installtion:
+## Installation:
 * Swift Package Manager
 
 ## Demo: 
